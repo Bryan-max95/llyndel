@@ -125,12 +125,12 @@
         }
         
         function launchHearts() {
-            for (let i = 0; i < 50; i++) {
+            for (let i = 0; i < 60; i++) {
                 let heart = document.createElement('div');
                 heart.classList.add('heart-fall');
                 heart.innerHTML = '❤️';
                 heart.style.left = Math.random() * window.innerWidth + 'px';
-                heart.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
                 document.body.appendChild(heart);
                 setTimeout(() => heart.remove(), 3000);
             }
